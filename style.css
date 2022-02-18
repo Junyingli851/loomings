@@ -1,17 +1,17 @@
 body {
 	/* This is from Google Fonts: https://fonts.google.com */
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Noto Serif', serif;
 
-	background-color: wheat; /* CSS has some named colors: https://htmlcolorcodes.com/color-names/ */
+	background-color: DarkSeaGreen; /* CSS has some named colors: https://htmlcolorcodes.com/color-names/ */
 	color: rgba(0, 0, 0, 0.75); /* But you can also specify hex or RGB values. This is semi-transparent black. */
-	font-size: 150%; /* Setting a larger base size. */
+	font-size: 170%; /* Setting a larger base size. */
 	line-height: 1; /* This is like “leading” in CSS. */
 	margin: 72px 24px; /* When you have two values, the first is top/bottom, second is right/left. */
 }
 
 section {
 	margin: 0 auto; /* This centers the sections when they are at the max-width. */
-	max-width: 980px; /* Caps the width. */
+	max-width: 1200px; /* Caps the width. */
 }
 
 /* Space between lower sections. */
@@ -27,20 +27,20 @@ h1 {
 
 /* This targets spans that are descendants of h1. These are called “combinators”. */
 h1 span {
-	font-size: 50%;
-	font-style: italic;
+	font-size: 30%;
+	font-style: oblique;
 	letter-spacing: initial; /* “initial” resets the inherited values from above. */
 	text-transform: initial;
 }
 
 blockquote {
-	font-size: 150%;
+	font-size: 120%;
 	margin-top: 96px;
-	padding-left: 180px; /* Padding is “inside” and element, vs. margin “outside”. */
+	padding-right: 180px; /* Padding is “inside” and element, vs. margin “outside”. */
 }
 
 blockquote span {
-	font-size: 200%;
+	font-size: 150%;
 	font-style: italic;
 }
 
@@ -80,14 +80,14 @@ hr {
 
 img {
 	display: block; /* Images are inline, by default. */
-	margin: 80px auto; /* 80 above/below, centered left/right. */
+	margin: 180px auto; /* 80 above/below, centered left/right. */
 	max-width: 36px;
 }
 
 /* I added a class to one image to target it separately. */
 .whale {
-	margin-right: initial; /* This reset will make the whale go to the right edge. */
-	max-width: 800px;
+	margin-left: initial; /* This reset will make the whale go to the right edge. */
+	max-width: 1000px;
 }
 
 a {
@@ -99,5 +99,5 @@ a img {
 	display: inline; /* To get the hand next to the text, take it back to inline.*/
 	height: 24px;
 	margin: initial; /* Get rid of the margin we applied earlier to all images. */
-	margin-right: 12px; /* This is lower, so applies after the initial/reset. */
+	margin-left: 12px; /* This is lower, so applies after the initial/reset. */
 }
